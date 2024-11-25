@@ -1,0 +1,14 @@
+Задача: Какой shell по умолчанию у max в нашей лабораторной среде?
+max@ws01:~$ echo $SHELL
+/usr/bin/bash
+
+Задача: Поменяй оболочку по умолчанию у max на /bin/sh
+max@ws01:~$ chsh
+Password:
+Changing the login shell for max
+Enter the new value, or press ENTER for the default
+        Login Shell [/usr/bin/bash]: /bin/sh
+max@ws01:~$
+$ echo $SHELL
+/bin/sh
+$

@@ -1,0 +1,7 @@
+max@ws01:~/linux-vm/3$ ls
+hosts.sh
+max@ws01:~/linux-vm/3$ bash hosts.sh
+hosts.sh: line 1: /etc/hosts: Permission denied
+max@ws01:~/linux-vm/3$ cat hosts.sh
+echo '172.20.1.1 dev-gateway' >> /etc/hosts
+max@ws01:~/linux-vm/3$ sudo bash hosts.sh

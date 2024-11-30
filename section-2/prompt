@@ -1,0 +1,5 @@
+$ bash
+max@ws01:~$ echo $PS1
+\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+max@ws01:~$ PS1='[\d]\u@\h'
+[Mon Nov 25]max@ws01

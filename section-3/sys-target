@@ -1,0 +1,4 @@
+max@ws01:~/linux-vm/3$ sudo systemctl get-default
+[sudo] password for max:
+multi-user.target
+max@ws01:~/linux-vm/3$

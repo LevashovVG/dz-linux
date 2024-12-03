@@ -1,0 +1,72 @@
+т.к. репозиторий был не установлен в профиле VM ришлось его сперва установить, а потом отключить.
+
+max@ws01:~/linux-vm/4$ sudo apt-add-repository deb http://ru.archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+Repository: 'deb http://ru.archive.ubuntu.com/ubuntu/ jammy-security universe restricted main multiverse'
+Description:
+Archive for codename: jammy-security components: universe,restricted,main,multiverse
+More info: http://ru.archive.ubuntu.com/ubuntu/
+Adding repository.
+Press [ENTER] to continue or Ctrl-c to cancel.
+Archive has template, updating /etc/apt/sources.list
+Adding disabled deb-src entry to /etc/apt/sources.list
+Get:1 http://ru.archive.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Hit:2 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://ru.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [957 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu jammy-security/universe Translation-en [203 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Components [125 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu jammy-security/universe Icons (48x48) [82.0 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:10 http://ru.archive.ubuntu.com/ubuntu jammy-security/universe Icons (64x64) [122 kB]
+Get:11 http://ru.archive.ubuntu.com/ubuntu jammy-security/universe Icons (64x64@2) [29 B]
+Get:12 http://ru.archive.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [19.5 kB]
+Get:13 http://ru.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2,611 kB]
+Get:14 http://ru.archive.ubuntu.com/ubuntu jammy-security/restricted Translation-en [453 kB]
+Get:15 http://ru.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Components [208 B]
+Get:16 http://ru.archive.ubuntu.com/ubuntu jammy-security/restricted Icons (48x48) [29 B]
+Get:17 http://ru.archive.ubuntu.com/ubuntu jammy-security/restricted Icons (64x64) [29 B]
+Get:18 http://ru.archive.ubuntu.com/ubuntu jammy-security/restricted Icons (64x64@2) [29 B]
+Get:19 http://ru.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [580 B]
+Get:20 http://ru.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1,956 kB]
+Get:21 http://ru.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [313 kB]
+Get:22 http://ru.archive.ubuntu.com/ubuntu jammy-security/main amd64 Components [43.0 kB]
+Get:23 http://ru.archive.ubuntu.com/ubuntu jammy-security/main Icons (48x48) [16.9 kB]
+Get:24 http://ru.archive.ubuntu.com/ubuntu jammy-security/main Icons (64x64) [26.5 kB]
+Get:25 http://ru.archive.ubuntu.com/ubuntu jammy-security/main Icons (64x64@2) [29 B]
+Get:26 http://ru.archive.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [13.3 kB]
+Get:27 http://ru.archive.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.6 kB]
+Get:28 http://ru.archive.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [8,260 B]
+Get:29 http://ru.archive.ubuntu.com/ubuntu jammy-security/multiverse amd64 Components [208 B]
+Get:30 http://ru.archive.ubuntu.com/ubuntu jammy-security/multiverse Icons (48x48) [29 B]
+Get:31 http://ru.archive.ubuntu.com/ubuntu jammy-security/multiverse Icons (64x64) [29 B]
+Get:32 http://ru.archive.ubuntu.com/ubuntu jammy-security/multiverse Icons (64x64@2) [29 B]
+Get:33 http://ru.archive.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [224 B]
+Get:34 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [673 kB]
+Get:35 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [131 kB]
+Get:36 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [498 kB]
+Get:37 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:38 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [720 kB]
+Get:39 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [309 kB]
+Get:40 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:41 http://ru.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:42 http://ru.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [212 B]
+Get:43 http://ru.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.7 kB]
+Get:44 http://ru.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [7,228 B]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [208 B]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [562 kB]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [51.9 kB]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Fetched 10.5 MB in 2s (5,666 kB/s)
+Reading package lists... Done
+max@ws01:~/linux-vm/4$ sudo add-apt-repository -r universe
+Removing component(s) 'universe' from all repositories.
+Press [ENTER] to continue or Ctrl-c to cancel.
+Removed universe from: deb http://ru.archive.ubuntu.com/ubuntu/ jammy-security restricted main multiverse
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy-security InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done

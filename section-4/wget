@@ -1,0 +1,4 @@
+max@ws01:~$ which wget
+/usr/bin/wget
+max@ws01:~$ dpkg -S /usr/bin/wget
+wget: /usr/bin/wget

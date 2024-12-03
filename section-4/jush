@@ -1,0 +1,16 @@
+max@ws01:~/linux-vm/4$ sudo apt remove libjs-jquery-jush
+[sudo] password for max:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libjs-jquery node-busboy node-cjs-module-lexer node-undici node-xtend nodejs-doc
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  libjs-jquery-jush
+0 upgraded, 0 newly installed, 1 to remove and 3 not upgraded.
+After this operation, 236 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 155662 files and directories currently installed.)
+Removing libjs-jquery-jush (12-4) ...
+max@ws01:~/linux-vm/4$

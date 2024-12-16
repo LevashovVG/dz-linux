@@ -1,0 +1,1 @@
+max@ws01:~/docs/gzip$ cat copyright | sed 's/^ [ \t]*//' | grep '^[0-9]' > strings

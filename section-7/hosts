@@ -1,0 +1,20 @@
+  GNU nano 7.2                                                                                                      /etc/hosts
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+172.20.1.1 dev-gateway
+172.20.1.1 dev-gateway
+10.0.2.20 jump_host
+172.20.236.101 app01
+172.20.236.10 str01
+172.20.235.10 db01
+ws01
+142.251.215.238 2607:f8b0:400a:800::200e google.com
+91.189.91.83 archive.ubuntu.com
+185.125.188.12 archive.canonical.com
+91.189.91.83 security.ubuntu.com
+91.189.91.83 us.archive.ubuntu.com
+91.189.91.38 banjo.canonical.com
+91.189.91.38 kazooie.canonical.com
+127.0.0.1 www.google.com

@@ -1,0 +1,27 @@
+max@ws01:~$ dig www.google.com
+
+; <<>> DiG 9.18.28-0ubuntu0.24.04.1-Ubuntu <<>> www.google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48674
+;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;www.google.com.                        IN      A
+
+;; ANSWER SECTION:
+www.google.com.         240     IN      A       64.233.161.105
+www.google.com.         240     IN      A       64.233.161.147
+www.google.com.         240     IN      A       64.233.161.99
+www.google.com.         240     IN      A       64.233.161.103
+www.google.com.         240     IN      A       64.233.161.104
+www.google.com.         240     IN      A       64.233.161.106
+
+;; Query time: 17 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Dec 27 17:50:40 MSK 2024
+;; MSG SIZE  rcvd: 139
+
+max@ws01:~$

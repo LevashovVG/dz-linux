@@ -1,0 +1,5 @@
+max@ws01:~$ sudo apt -y install iptables
+max@ws01:~$ sudo iptables -L OUTPUT
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+max@ws01:~$

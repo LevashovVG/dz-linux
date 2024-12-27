@@ -1,0 +1,3 @@
+max@ws01:~$ sudo groupadd iren -g 1010
+max@ws01:~$ sudo useradd -g 1010 iren
+max@ws01:~$ sudo usermod --shell /bin/dash iren

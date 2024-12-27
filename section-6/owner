@@ -1,0 +1,1 @@
+max@ws01:~$ sudo ls -l ~/owner/ | grep [d,-]r--

@@ -1,0 +1,14 @@
+max@ws01:/mnt$ sudo mkdir /mnt/tmp-data
+max@ws01:/mnt$ sudo mount -t tmpfs -o size=100M tmpfs /mnt/tmp-data
+
+
+max@ws01:/mnt$ df -h
+Filesystem                   Size  Used Avail Use% Mounted on
+tmpfs                        776M  1.4M  774M   1% /run
+/dev/sda2                     40G   12G   26G  31% /
+tmpfs                        3.8G     0  3.8G   0% /dev/shm
+tmpfs                        5.0M     0  5.0M   0% /run/lock
+/dev/sdb1                    452M   24K  417M   1% /mnt/data
+tmpfs                        775M   84K  775M   1% /run/user/1001
+/dev/mapper/rotoro--vg-data   25G   24K   24G   1% /mnt/media
+tmpfs                        100M     0  100M   0% /mnt/tmp-data
